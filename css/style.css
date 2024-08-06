@@ -1,0 +1,338 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Meiryo UI',sans-serif;
+  font-size: 18px;
+}
+
+p {
+  margin: 0;
+}
+
+/* ヘッダー */
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+.header-inner a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*main画像*/
+.mainpic {
+  height: 620px;
+  
+}
+
+/* MyProfileの見出し部分 */
+h1 {
+  margin: 0 0 0 20px;
+  font-size: 45px;
+  padding: 0px 20px;
+}
+
+.home {
+  text-decoration: none;
+}
+
+/* ナビゲーションメニュー */
+nav .menu {
+  display: flex;
+  padding-left: 0;
+  text-decoration: underline;
+
+}
+
+nav li {
+  margin: 0 20px;
+  list-style: none;
+}
+
+nav a {
+  font-size: 34px;
+}
+
+h2 {
+  margin: 0;
+  padding: 60px 0 40px;
+  text-align: center;
+  font-size: 34px;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+/* 画像 */
+img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* About */
+.about-inner {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+}
+
+/* 名前 */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* 丸く切り取る画像 */
+.circle {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+}
+
+/* プロフィールの説明部分 */
+.content {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -40px;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+.works-item {
+  width: 31.74603%;
+  margin-right: 1.58730%;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.works-item:hover {
+  opacity: .9;
+}
+
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.works-img img {
+  border: 1px solid #e6e6e6;
+}
+
+.works-img center {
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+.works-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.works-info {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/*--------------------------------
+ Skill
+---------------------------------*/
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -50px;
+    
+  }
+  
+  .skill-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 48%;
+    margin-bottom: 50px;
+  }
+  
+  .skill-img {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .skill-body {
+    flex: 1;
+  }
+  
+  .skill-name {
+    margin-bottom: 10px;
+  }
+  
+  .skill-text {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* slick */
+.slider {
+  /* ul要素の不要なパディングを削除する */
+  padding: 0;
+}
+
+/* TOPに戻るボタン */
+#page-top {    
+  position: fixed;
+  bottom: 38px;
+  right: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 28px 24px;  
+  border-radius: 50%;
+  font-family: "Noto Sans JP", sans-serif;
+  display: none;
+}
+
+/* スクロール時のフェードイン */
+section {
+  opacity: 0;
+  transition: 1s;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* モーダル */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+}
+
+.big-img {
+  position: absolute;  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;  
+  width: 80%;
+  max-width: 800px;  
+  margin: auto;  
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;  
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+
+/* 横幅が767pxまでの場合 */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  /* Works */
+  .works-name {
+    font-size: 12px;
+  }
+
+  .works-info {
+    margin-top: 3px;
+  }
+
+  .works-list {
+    justify-content: space-between;
+  }
+
+  .works-item {
+    flex: 0 0 48%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  /* Skill */
+  .skill-list {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skill-item {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .skill-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .skill-name {
+    margin-bottom: 5px;
+  }
+
+  .skill-text {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+  
+
+}
